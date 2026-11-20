@@ -884,3 +884,329 @@ tbody tr:hover {
         flex-direction: column;
     }
 }
+
+
+
+/* =====================================
+   AJUSTE GERAL DE TIPOGRAFIA - DESKTOP
+===================================== */
+
+body {
+    font-size: 16px;
+}
+
+/* Menu lateral */
+.brand h2 {
+    font-size: 23px;
+}
+
+.brand span {
+    font-size: 12px;
+}
+
+.sidebar-label {
+    font-size: 13px;
+}
+
+.sidebar-nav a {
+    font-size: 16px;
+    padding: 15px 18px;
+}
+
+.profile strong {
+    font-size: 15px;
+}
+
+.profile span {
+    font-size: 13px;
+}
+
+/* Cabeçalho */
+.breadcrumb {
+    font-size: 14px;
+}
+
+.topbar h1 {
+    font-size: 30px;
+}
+
+.topbar-date {
+    font-size: 14px;
+}
+
+/* Banner principal */
+.welcome-banner h2 {
+    font-size: 29px;
+}
+
+.welcome-banner p {
+    font-size: 16px;
+}
+
+.banner-tag {
+    font-size: 13px;
+}
+
+/* Títulos das seções */
+.section-heading h2,
+.content-card h2 {
+    font-size: 22px;
+}
+
+.section-heading p,
+.content-card > p {
+    font-size: 15px;
+}
+
+.section-kicker {
+    font-size: 13px;
+}
+
+/* Indicadores */
+.stat-card span {
+    font-size: 15px;
+}
+
+.stat-card h3 {
+    font-size: 27px;
+}
+
+.stat-card small {
+    font-size: 13px;
+}
+
+/* Formulários */
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 16px;
+    min-height: 48px;
+}
+
+.form-group textarea {
+    min-height: 110px;
+}
+
+/* Botões */
+.btn,
+button {
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 44px;
+}
+
+/* Tabelas */
+.data-table th {
+    font-size: 14px;
+}
+
+.data-table td {
+    font-size: 15px;
+    padding: 17px 14px;
+}
+
+/* Situação das reservas */
+.status {
+    font-size: 13px;
+    padding: 7px 11px;
+}
+
+/* Resumo de pagamento e checkout */
+.bill-row strong,
+.bill-row span {
+    font-size: 15px;
+}
+
+.bill-total strong {
+    font-size: 23px;
+}
+
+.bill-total span {
+    font-size: 16px;
+}
+
+/* Informações complementares */
+.form-note,
+.policy-item small,
+.confirmation-item small {
+    font-size: 14px;
+}
+
+.policy-item strong,
+.confirmation-item strong {
+    font-size: 16px;
+}
+
+/* Rodapé */
+.footer {
+    font-size: 13px;
+}
+
+/* Espaço e leitura em telas menores */
+@media (max-width: 800px) {
+    .topbar h1 {
+        font-size: 26px;
+    }
+
+    .welcome-banner h2 {
+        font-size: 24px;
+    }
+
+    .section-heading h2,
+    .content-card h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* =====================================
+   MAPA DE QUARTOS - CORES MAIS FORTES
+===================================== */
+
+/* Disponível */
+.room.available {
+    background: #d0f0df;
+    border: 1px solid #54ae7c;
+    color: #17633b;
+}
+
+/* Ocupado */
+.room.occupied {
+    background: #f4caca;
+    border: 1px solid #d87575;
+    color: #8d2525;
+}
+
+/* Reservado */
+.room.reserved {
+    background: #ffe5b5;
+    border: 1px solid #d9a13d;
+    color: #80500b;
+}
+
+/* Manutenção */
+.room.maintenance {
+    background: #d8d1f5;
+    border: 1px solid #9281d2;
+    color: #493b89;
+}
+
+/* Número e identificação do quarto */
+.room {
+    font-size: 16px;
+    font-weight: 700;
+    min-height: 75px;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+.room:hover {
+    filter: brightness(0.96);
+    transform: translateY(-2px);
+}
+
+/* Legenda do mapa */
+.room-legend {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.room-legend span {
+    font-size: 14px;
+}
+
+
+/* =====================================
+   MENU LATERAL - MELHOR APROVEITAMENTO
+===================================== */
+
+.sidebar {
+    width: 270px;
+    padding: 30px 20px;
+}
+
+.brand {
+    margin-bottom: 48px;
+    gap: 14px;
+}
+
+.brand-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+}
+
+.brand h2 {
+    font-size: 24px;
+}
+
+.sidebar-label {
+    margin-bottom: 16px;
+    padding-left: 12px;
+    letter-spacing: 1.2px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 54px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.sidebar-nav a span {
+    width: 25px;
+    min-width: 25px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.sidebar-nav a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(3px);
+}
+
+.sidebar-nav a.active {
+    background: #285db5;
+    color: #ffffff;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 28px;
+}
+
+.profile {
+    padding: 14px 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    gap: 12px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 1150px) {
+    .sidebar {
+        width: 240px;
+        padding: 24px 15px;
+    }
+
+    .sidebar-nav a {
+        gap: 12px;
+        padding: 13px 12px;
+    }
+}
