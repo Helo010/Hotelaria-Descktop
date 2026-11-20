@@ -4,260 +4,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BellaVista Hotel | Recepção</title>
+    <title>BellaVista Hotel | Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="dashboard">
 
     <aside class="sidebar">
         <div class="brand">
             <div class="logo">BV</div>
             <div>
                 <h2>BellaVista</h2>
-                <span>HOTEL</span>
+                <span>HOTEL & RESORT</span>
             </div>
         </div>
 
-        <div class="menu-title">MENU PRINCIPAL</div>
+        <div class="menu-label">MENU PRINCIPAL</div>
 
-        <nav>
-            <a href="index.html" class="active">▦ Início</a>
-            <a href="reservas.html">▤ Reservas</a>
-            <a href="checkin.html">↪ Check-in</a>
-            <a href="checkout.html">↩ Check-out</a>
-            <a href="consumo.html">♧ Consumo</a>
-            <a href="cancelamentos.html">✕ Cancelamentos</a>
+        <nav class="menu">
+            <a href="index.html" class="active">
+                <span>▦</span> Dashboard
+            </a>
+            <a href="reservas.html">
+                <span>▣</span> Reservas
+            </a>
+            <a href="checkin.html">
+                <span>↘</span> Check-in
+            </a>
+            <a href="checkout.html">
+                <span>↗</span> Check-out
+            </a>
+            <a href="consumo.html">
+                <span>▤</span> Consumo
+            </a>
+            <a href="cancelamentos.html">
+                <span>⊗</span> Cancelamentos
+            </a>
         </nav>
 
         <div class="sidebar-bottom">
-            <div class="employee">
-                <div class="avatar">RF</div>
+            <div class="user-profile">
+                <div class="user-avatar">AD</div>
                 <div>
-                    <strong>Recepcionista</strong>
-                    <small>Funcionário</small>
+                    <strong>Administrador</strong>
+                    <small>Recepção</small>
                 </div>
             </div>
         </div>
     </aside>
 
-    <main class="main">
+    <main class="main-content">
 
         <header class="topbar">
             <div>
-                <span class="breadcrumb">BellaVista / Início</span>
+                <span class="breadcrumb">BellaVista / Dashboard</span>
                 <h1>Painel de Controle</h1>
-                <p>Bem-vindo ao sistema de gerenciamento do hotel.</p>
+                <p>Acompanhe as operações e a ocupação do hotel.</p>
             </div>
 
             <div class="topbar-right">
-                <span class="status-online">● Sistema operacional</span>
-                <div class="date">13 NOV 2026</div>
+                <span class="system-status">
+                    <span class="status-dot"></span>
+                    Sistema operacional
+                </span>
+                <div class="date-display">13 NOV 2026</div>
             </div>
         </header>
 
-        <section class="welcome">
+        <section class="welcome-banner">
             <div>
-                <span class="welcome-label">BELLA VISTA HOTEL</span>
+                <span class="banner-label">PAINEL ADMINISTRATIVO</span>
                 <h2>Excelência em hospitalidade.</h2>
-                <p>Gerencie as operações do hotel de forma simples e organizada.</p>
+                <p>Gerencie reservas, hóspedes e acomodações em um só lugar.</p>
             </div>
-            <div class="welcome-icon">♜</div>
+            <div class="banner-decoration">BV</div>
         </section>
 
-        <section class="stats">
-            <div class="stat-card">
-                <div class="stat-top">
-                    <span>Quartos disponíveis</span>
-                    <div class="stat-icon green">✓</div>
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <h2>Visão geral</h2>
+                    <p>Resumo da situação atual do hotel.</p>
                 </div>
-                <h2>08</h2>
-                <small>Disponíveis para hospedagem</small>
             </div>
 
-            <div class="stat-card">
-                <div class="stat-top">
-                    <span>Quartos ocupados</span>
-                    <div class="stat-icon blue">⌂</div>
-                </div>
-                <h2>07</h2>
-                <small>Em utilização</small>
-            </div>
+            <div class="stats-grid">
 
-            <div class="stat-card">
-                <div class="stat-top">
-                    <span>Reservados</span>
-                    <div class="stat-icon gold">▤</div>
-                </div>
-                <h2>03</h2>
-                <small>Reservas confirmadas</small>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-top">
-                    <span>Manutenção</span>
-                    <div class="stat-icon red">⚙</div>
-                </div>
-                <h2>02</h2>
-                <small>Indisponíveis temporariamente</small>
-            </div>
-        </section>
-
-        <section class="content-grid">
-
-            <div class="panel rooms-panel">
-                <div class="panel-header">
+                <article class="stat-card">
+                    <div class="stat-icon available-icon">✓</div>
                     <div>
-                        <h3>Mapa de quartos</h3>
-                        <p>Visualização geral da ocupação</p>
+                        <span>Quartos disponíveis</span>
+                        <h3>08</h3>
+                        <small>Prontos para ocupação</small>
                     </div>
-                    <span class="total-rooms">20 QUARTOS</span>
-                </div>
+                </article>
 
-                <div class="legend">
-                    <span><i class="dot free"></i> Disponível</span>
-                    <span><i class="dot busy"></i> Ocupado</span>
-                    <span><i class="dot booked"></i> Reservado</span>
-                    <span><i class="dot maint"></i> Manutenção</span>
+                <article class="stat-card">
+                    <div class="stat-icon occupied-icon">⌂</div>
+                    <div>
+                        <span>Quartos ocupados</span>
+                        <h3>07</h3>
+                        <small>Hóspedes hospedados</small>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon reserved-icon">▣</div>
+                    <div>
+                        <span>Quartos reservados</span>
+                        <h3>03</h3>
+                        <small>Reservas confirmadas</small>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon maintenance-icon">⚙</div>
+                    <div>
+                        <span>Em manutenção</span>
+                        <h3>02</h3>
+                        <small>Indisponíveis no momento</small>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <h2>Mapa de acomodações</h2>
+                    <p>Visualização da situação dos quartos por andar.</p>
+                </div>
+                <span class="total-rooms">20 quartos</span>
+            </div>
+
+            <div class="map-card">
+
+                <div class="map-legend">
+                    <span><i class="legend available"></i> Disponível</span>
+                    <span><i class="legend occupied"></i> Ocupado</span>
+                    <span><i class="legend reserved"></i> Reservado</span>
+                    <span><i class="legend maintenance"></i> Manutenção</span>
                 </div>
 
                 <div class="floor">
-                    <span>1º ANDAR</span>
-                    <div class="room-grid">
-                        <div class="room free">101</div>
-                        <div class="room busy">102</div>
-                        <div class="room free">103</div>
-                        <div class="room booked">104</div>
-                        <div class="room busy">105</div>
-                        <div class="room free">106</div>
-                        <div class="room maint">107</div>
-                        <div class="room busy">108</div>
-                        <div class="room free">109</div>
-                        <div class="room booked">110</div>
+                    <div class="floor-title">
+                        <strong>1º ANDAR</strong>
+                        <span>Quartos 101–110</span>
+                    </div>
+
+                    <div class="rooms-grid">
+                        <div class="room available-room"><strong>101</strong><small>Disponível</small></div>
+                        <div class="room occupied-room"><strong>102</strong><small>Ocupado</small></div>
+                        <div class="room available-room"><strong>103</strong><small>Disponível</small></div>
+                        <div class="room reserved-room"><strong>104</strong><small>Reservado</small></div>
+                        <div class="room occupied-room"><strong>105</strong><small>Ocupado</small></div>
+                        <div class="room available-room"><strong>106</strong><small>Disponível</small></div>
+                        <div class="room maintenance-room"><strong>107</strong><small>Manutenção</small></div>
+                        <div class="room occupied-room"><strong>108</strong><small>Ocupado</small></div>
+                        <div class="room available-room"><strong>109</strong><small>Disponível</small></div>
+                        <div class="room reserved-room"><strong>110</strong><small>Reservado</small></div>
                     </div>
                 </div>
 
                 <div class="floor">
-                    <span>2º ANDAR</span>
-                    <div class="room-grid">
-                        <div class="room busy">111</div>
-                        <div class="room free">112</div>
-                        <div class="room booked">113</div>
-                        <div class="room free">114</div>
-                        <div class="room busy">115</div>
-                        <div class="room maint">116</div>
-                        <div class="room free">117</div>
-                        <div class="room busy">118</div>
-                        <div class="room free">119</div>
-                        <div class="room busy">120</div>
+                    <div class="floor-title">
+                        <strong>2º ANDAR</strong>
+                        <span>Quartos 111–120</span>
+                    </div>
+
+                    <div class="rooms-grid">
+                        <div class="room occupied-room"><strong>111</strong><small>Ocupado</small></div>
+                        <div class="room available-room"><strong>112</strong><small>Disponível</small></div>
+                        <div class="room reserved-room"><strong>113</strong><small>Reservado</small></div>
+                        <div class="room available-room"><strong>114</strong><small>Disponível</small></div>
+                        <div class="room occupied-room"><strong>115</strong><small>Ocupado</small></div>
+                        <div class="room maintenance-room"><strong>116</strong><small>Manutenção</small></div>
+                        <div class="room available-room"><strong>117</strong><small>Disponível</small></div>
+                        <div class="room occupied-room"><strong>118</strong><small>Ocupado</small></div>
+                        <div class="room available-room"><strong>119</strong><small>Disponível</small></div>
+                        <div class="room occupied-room"><strong>120</strong><small>Ocupado</small></div>
                     </div>
                 </div>
 
-                <div class="room-note">
-                    <span>ⓘ</span>
-                    Consulte as cores para identificar rapidamente a situação de cada quarto.
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <h2>Acesso rápido</h2>
+                    <p>Atalhos para as principais atividades da recepção.</p>
                 </div>
             </div>
 
-            <div class="panel actions-panel">
-                <div class="panel-header">
-                    <div>
-                        <h3>Ações rápidas</h3>
-                        <p>Acesso às operações</p>
-                    </div>
-                </div>
-
-                <a href="reservas.html" class="action-card">
-                    <div class="action-icon blue">▤</div>
+            <div class="quick-grid">
+                <a href="reservas.html" class="quick-card">
+                    <span class="quick-icon">＋</span>
                     <div>
                         <strong>Nova reserva</strong>
                         <small>Registrar hospedagem</small>
                     </div>
-                    <span class="arrow">›</span>
+                    <span class="quick-arrow">→</span>
                 </a>
 
-                <a href="checkin.html" class="action-card">
-                    <div class="action-icon green">↪</div>
+                <a href="checkin.html" class="quick-card">
+                    <span class="quick-icon">↘</span>
                     <div>
                         <strong>Realizar check-in</strong>
-                        <small>Entrada de hóspedes</small>
+                        <small>Registrar entrada</small>
                     </div>
-                    <span class="arrow">›</span>
+                    <span class="quick-arrow">→</span>
                 </a>
 
-                <a href="checkout.html" class="action-card">
-                    <div class="action-icon gold">↩</div>
+                <a href="checkout.html" class="quick-card">
+                    <span class="quick-icon">↗</span>
                     <div>
                         <strong>Realizar check-out</strong>
-                        <small>Finalizar hospedagem</small>
+                        <small>Registrar saída</small>
                     </div>
-                    <span class="arrow">›</span>
+                    <span class="quick-arrow">→</span>
                 </a>
 
-                <a href="consumo.html" class="action-card">
-                    <div class="action-icon purple">♧</div>
+                <a href="consumo.html" class="quick-card">
+                    <span class="quick-icon">▤</span>
                     <div>
                         <strong>Registrar consumo</strong>
-                        <small>Lançar despesas do quarto</small>
+                        <small>Lançar produtos</small>
                     </div>
-                    <span class="arrow">›</span>
+                    <span class="quick-arrow">→</span>
                 </a>
             </div>
-
         </section>
 
-        <section class="panel recent-panel">
-            <div class="panel-header">
+        <section class="section">
+            <div class="section-heading">
                 <div>
-                    <h3>Reservas recentes</h3>
-                    <p>Últimas movimentações do hotel</p>
+                    <h2>Reservas recentes</h2>
+                    <p>Últimas movimentações registradas.</p>
                 </div>
-                <a href="reservas.html" class="view-all">Ver todas →</a>
+                <a href="reservas.html" class="text-link">Ver todas →</a>
             </div>
 
-            <div class="table-wrapper">
+            <div class="table-card">
                 <table>
                     <thead>
                         <tr>
-                            <th>HÓSPEDE</th>
-                            <th>QUARTO</th>
-                            <th>CHECK-IN</th>
-                            <th>CHECK-OUT</th>
-                            <th>STATUS</th>
+                            <th>Hóspede</th>
+                            <th>Quarto</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
+                            <th>Situação</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td><strong>Mariana Oliveira</strong></td>
                             <td>104</td>
                             <td>13/11/2026</td>
                             <td>16/11/2026</td>
-                            <td><span class="badge reserved">Confirmada</span></td>
+                            <td><span class="status confirmed">Confirmada</span></td>
                         </tr>
+
                         <tr>
                             <td><strong>Lucas Ferreira</strong></td>
                             <td>110</td>
                             <td>14/11/2026</td>
                             <td>17/11/2026</td>
-                            <td><span class="badge reserved">Confirmada</span></td>
+                            <td><span class="status confirmed">Confirmada</span></td>
                         </tr>
+
                         <tr>
                             <td><strong>Ana Martins</strong></td>
                             <td>113</td>
                             <td>15/11/2026</td>
                             <td>18/11/2026</td>
-                            <td><span class="badge pending">Pendente</span></td>
+                            <td><span class="status pending">Pendente</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <footer>
-            <span>BellaVista Hotel © 2026</span>
-            <span>Sistema de Gerenciamento Hoteleiro</span>
+        <footer class="footer">
+            <span>© 2026 BellaVista Hotel</span>
+            <span>Sistema de gerenciamento hoteleiro</span>
         </footer>
 
     </main>
+</div>
 
 </body>
 </html>

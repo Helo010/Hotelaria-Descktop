@@ -4,138 +4,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BellaVista Hotel | Check-out</title>
+    <title>Check-out | BellaVista Hotel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<aside class="sidebar">
-    <div class="brand">
-        <div class="logo">BV</div>
-        <div><h2>BellaVista</h2><span>HOTEL</span></div>
-    </div>
-    <div class="menu-title">MENU PRINCIPAL</div>
-    <nav>
-        <a href="index.html">▦ Dashboard</a>
-        <a href="reservas.html">▤ Reservas</a>
-        <a href="checkin.html">↪ Check-in</a>
-        <a href="checkout.html" class="active">↩ Check-out</a>
-        <a href="consumo.html">♧ Consumo</a>
-        <a href="cancelamentos.html">✕ Cancelamentos</a>
-    </nav>
-    <div class="sidebar-bottom">
-        <div class="employee">
-            <div class="avatar">RF</div>
-            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
-        </div>
-    </div>
-</aside>
+<div class="dashboard">
 
-<main class="main">
-
-    <header class="topbar">
-        <div>
-            <span class="breadcrumb">BellaVista / Check-out</span>
-            <h1>Saída de Hóspedes</h1>
-            <p>Finalize a hospedagem e confira as despesas.</p>
-        </div>
-    </header>
-
-    <section class="welcome">
-        <div>
-            <span class="welcome-label">FINALIZAÇÃO</span>
-            <h2>Obrigado por escolher o BellaVista.</h2>
-            <p>Confira os valores antes de concluir o check-out.</p>
-        </div>
-        <div class="welcome-icon">↩</div>
-    </section>
-
-    <section class="panel form-panel">
-        <div class="panel-header">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">BV</div>
             <div>
-                <h3>Identificação da hospedagem</h3>
-                <p>Selecione o hóspede para consultar a conta.</p>
+                <h2>BellaVista</h2>
+                <span>HOTEL & RESORT</span>
             </div>
-            <span class="total-rooms">SAÍDA</span>
         </div>
 
-        <form>
-            <div class="form-grid">
-                <div class="field full">
-                    <label>Hóspede</label>
-                    <select>
-                        <option value="">Selecione o hóspede</option>
-                        <option>Mariana Oliveira</option>
-                        <option>Lucas Ferreira</option>
+        <div class="sidebar-label">MENU PRINCIPAL</div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html"><span>▦</span> Dashboard</a>
+            <a href="reservas.html"><span>▤</span> Reservas</a>
+            <a href="checkin.html"><span>↪</span> Check-in</a>
+            <a href="checkout.html" class="active"><span>↗</span> Check-out</a>
+            <a href="consumo.html"><span>☕</span> Consumo</a>
+            <a href="cancelamentos.html"><span>×</span> Cancelamentos</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="profile">
+                <div class="profile-avatar">AD</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <span>Recepção</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <span class="breadcrumb">BellaVista / Operações</span>
+                <h1>Check-out</h1>
+            </div>
+            <div class="topbar-info">
+                <span class="topbar-date">20 de novembro de 2026</span>
+                <div class="user-avatar">AD</div>
+            </div>
+        </header>
+
+        <section class="welcome-banner">
+            <div>
+                <span class="banner-tag">FINALIZAÇÃO DE HOSPEDAGEM</span>
+                <h2>Obrigado por escolher o BellaVista.</h2>
+                <p>Confira os dados da hospedagem, os consumos e finalize a saída do hóspede.</p>
+            </div>
+            <div class="banner-decoration">BV</div>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <div class="stat-icon blue">↗</div>
+                <div>
+                    <span>Saídas previstas</span>
+                    <h3>03</h3>
+                    <small>Para hoje</small>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div>
+                    <span>Saídas finalizadas</span>
+                    <h3>02</h3>
+                    <small>Concluídas hoje</small>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon orange">◷</div>
+                <div>
+                    <span>Aguardando pagamento</span>
+                    <h3>01</h3>
+                    <small>Em aberto</small>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon purple">$</div>
+                <div>
+                    <span>Total das contas</span>
+                    <h3>R$ 835,00</h3>
+                    <small>Valores registrados</small>
+                </div>
+            </article>
+        </section>
+
+        <section class="content-card">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">ETAPA 01</span>
+                    <h2>Identificação da hospedagem</h2>
+                    <p>Selecione a reserva que será finalizada.</p>
+                </div>
+                <span class="status status-warning">Saída pendente</span>
+            </div>
+
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="hospede">Hóspede</label>
+                        <select id="hospede" name="hospede">
+                            <option value="">Selecione o hóspede</option>
+                            <option>Mariana Oliveira - Reserva #001</option>
+                            <option>Lucas Ferreira - Reserva #002</option>
+                            <option>Pedro Santos - Reserva #003</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quarto">Número do quarto</label>
+                        <select id="quarto" name="quarto">
+                            <option value="">Selecione o quarto</option>
+                            <option>102</option>
+                            <option>105</option>
+                            <option>108</option>
+                            <option>111</option>
+                            <option>115</option>
+                            <option>118</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data-checkout">Data do check-out</label>
+                        <input type="date" id="data-checkout" name="data-checkout">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="atendente">Atendente responsável</label>
+                        <input type="text" id="atendente" name="atendente" placeholder="Nome do atendente">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="checkout-layout">
+
+            <div class="content-card">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">ETAPA 02</span>
+                        <h2>Conferência da conta</h2>
+                        <p>Confira os valores registrados durante a hospedagem.</p>
+                    </div>
+                </div>
+
+                <div class="bill-details">
+                    <div class="bill-row">
+                        <div>
+                            <strong>Hospedagem</strong>
+                            <span>Diárias da reserva</span>
+                        </div>
+                        <strong>R$ 750,00</strong>
+                    </div>
+
+                    <div class="bill-row">
+                        <div>
+                            <strong>Consumo</strong>
+                            <span>Bebidas e produtos registrados</span>
+                        </div>
+                        <strong>R$ 85,00</strong>
+                    </div>
+
+                    <div class="bill-row">
+                        <div>
+                            <strong>Serviços adicionais</strong>
+                            <span>Outros serviços utilizados</span>
+                        </div>
+                        <strong>R$ 0,00</strong>
+                    </div>
+
+                    <div class="bill-total">
+                        <span>Total da hospedagem</span>
+                        <strong>R$ 835,00</strong>
+                    </div>
+                </div>
+
+                <div class="form-group payment-field">
+                    <label for="pagamento">Forma de pagamento</label>
+                    <select id="pagamento" name="pagamento">
+                        <option value="">Selecione a forma de pagamento</option>
+                        <option>Cartão de crédito</option>
+                        <option>Cartão de débito</option>
+                        <option>PIX</option>
+                        <option>Dinheiro</option>
                     </select>
                 </div>
 
-                <div class="field">
-                    <label>Número do quarto</label>
-                    <select>
-                        <option value="">Selecione o quarto</option>
-                        <option>102</option>
-                        <option>105</option>
-                        <option>108</option>
-                        <option>111</option>
-                    </select>
-                </div>
-
-                <div class="field">
-                    <label>Data de check-out</label>
-                    <input type="date">
+                <div class="form-group payment-field">
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes" name="observacoes" rows="3" placeholder="Registre informações adicionais sobre o pagamento ou a saída..."></textarea>
                 </div>
             </div>
-        </form>
-    </section>
 
-    <section class="panel recent-panel">
-        <div class="panel-header">
-            <div>
-                <h3>Resumo da conta</h3>
-                <p>Consolidação das despesas da hospedagem.</p>
+            <aside class="content-card checkout-summary">
+                <span class="section-kicker">RESUMO FINAL</span>
+                <h2>Finalizar hospedagem</h2>
+                <p>Antes de concluir, confira os itens abaixo.</p>
+
+                <div class="confirmation-list">
+                    <div class="confirmation-item">
+                        <span class="confirmation-check">✓</span>
+                        <div>
+                            <strong>Dados do hóspede</strong>
+                            <small>Identificação conferida</small>
+                        </div>
+                    </div>
+
+                    <div class="confirmation-item">
+                        <span class="confirmation-check">✓</span>
+                        <div>
+                            <strong>Consumos registrados</strong>
+                            <small>Conferência da conta</small>
+                        </div>
+                    </div>
+
+                    <div class="confirmation-item">
+                        <span class="confirmation-check">✓</span>
+                        <div>
+                            <strong>Pagamento</strong>
+                            <small>Verificar antes de finalizar</small>
+                        </div>
+                    </div>
+
+                    <div class="confirmation-item">
+                        <span class="confirmation-check">✓</span>
+                        <div>
+                            <strong>Liberação do quarto</strong>
+                            <small>Disponibilizar após a saída</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-total">
+                    <span>Valor total</span>
+                    <strong>R$ 835,00</strong>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-full">Confirmar check-out</button>
+                <a href="index.html" class="btn btn-secondary btn-full">Voltar ao dashboard</a>
+
+                <p class="form-note">A saída deve ser concluída somente após a conferência dos valores e a confirmação do pagamento.</p>
+            </aside>
+
+        </section>
+
+        <section class="content-card">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">HISTÓRICO</span>
+                    <h2>Últimos check-outs</h2>
+                    <p>Acompanhamento das hospedagens finalizadas.</p>
+                </div>
             </div>
-            <span class="total-rooms">CONFERÊNCIA</span>
-        </div>
 
-        <div class="bill">
-            <div class="bill-row">
-                <span>Diárias de hospedagem</span>
-                <strong>R$ 750,00</strong>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Hóspede</th>
+                            <th>Quarto</th>
+                            <th>Data</th>
+                            <th>Valor total</th>
+                            <th>Pagamento</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carolina Mendes</td>
+                            <td>108</td>
+                            <td>20/11/2026</td>
+                            <td>R$ 620,00</td>
+                            <td>PIX</td>
+                            <td><span class="status status-success">Finalizado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Rafael Costa</td>
+                            <td>115</td>
+                            <td>20/11/2026</td>
+                            <td>R$ 480,00</td>
+                            <td>Cartão</td>
+                            <td><span class="status status-success">Finalizado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mariana Oliveira</td>
+                            <td>102</td>
+                            <td>20/11/2026</td>
+                            <td>R$ 835,00</td>
+                            <td>Pendente</td>
+                            <td><span class="status status-warning">Em aberto</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="bill-row">
-                <span>Consumo de bebidas</span>
-                <strong>R$ 85,00</strong>
-            </div>
-            <div class="bill-row">
-                <span>Serviços adicionais</span>
-                <strong>R$ 0,00</strong>
-            </div>
-            <div class="bill-total">
-                <span>Total da hospedagem</span>
-                <strong>R$ 835,00</strong>
-            </div>
-        </div>
+        </section>
 
-        <div class="form-actions">
-            <button type="button" class="btn-secondary">Voltar</button>
-            <button type="button" class="btn-primary">Finalizar check-out</button>
-        </div>
-    </section>
+        <footer class="footer">
+            <span>© 2026 BellaVista Hotel. Todos os direitos reservados.</span>
+            <span>Sistema de Gestão Hoteleira</span>
+        </footer>
 
-    <section class="panel">
-        <div class="info-list">
-            <div>✓ <span>Conferir despesas e consumo.</span></div>
-            <div>✓ <span>Confirmar o encerramento da hospedagem.</span></div>
-            <div>✓ <span>Realizar a liberação do quarto.</span></div>
-        </div>
-    </section>
+    </main>
+</div>
 
-    <footer>
-        <span>BellaVista Hotel © 2026</span>
-        <span>Sistema de Gerenciamento Hoteleiro</span>
-    </footer>
-
-</main>
 </body>
 </html>
+

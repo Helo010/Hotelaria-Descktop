@@ -4,162 +4,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BellaVista Hotel | Cancelamentos</title>
+    <title>Cancelamentos | BellaVista Hotel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<aside class="sidebar">
-    <div class="brand">
-        <div class="logo">BV</div>
-        <div><h2>BellaVista</h2><span>HOTEL</span></div>
-    </div>
-    <div class="menu-title">MENU PRINCIPAL</div>
-    <nav>
-        <a href="index.html">▦ Dashboard</a>
-        <a href="reservas.html">▤ Reservas</a>
-        <a href="checkin.html">↪ Check-in</a>
-        <a href="checkout.html">↩ Check-out</a>
-        <a href="consumo.html">♧ Consumo</a>
-        <a href="cancelamentos.html" class="active">✕ Cancelamentos</a>
-    </nav>
-    <div class="sidebar-bottom">
-        <div class="employee">
-            <div class="avatar">RF</div>
-            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
-        </div>
-    </div>
-</aside>
+<div class="dashboard">
 
-<main class="main">
-
-    <header class="topbar">
-        <div>
-            <span class="breadcrumb">BellaVista / Cancelamentos</span>
-            <h1>Cancelamento de Reservas</h1>
-            <p>Consulte reservas e visualize a confirmação de cancelamento.</p>
-        </div>
-    </header>
-
-    <section class="welcome">
-        <div>
-            <span class="welcome-label">GERENCIAMENTO</span>
-            <h2>Cancelamento seguro.</h2>
-            <p>Confira os dados antes de cancelar uma reserva.</p>
-        </div>
-        <div class="welcome-icon">✕</div>
-    </section>
-
-    <section class="panel form-panel">
-        <div class="panel-header">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">BV</div>
             <div>
-                <h3>Consultar reserva</h3>
-                <p>Selecione a hospedagem que deseja consultar.</p>
+                <h2>BellaVista</h2>
+                <span>HOTEL & RESORT</span>
             </div>
-            <span class="total-rooms">CONSULTA</span>
         </div>
 
-        <form>
-            <div class="form-grid">
-                <div class="field full">
-                    <label>Reserva</label>
-                    <select required>
-                        <option value="">Selecione a reserva</option>
-                        <option>001 - Mariana Oliveira</option>
-                        <option>002 - Lucas Ferreira</option>
-                        <option>003 - Ana Martins</option>
-                    </select>
+        <div class="sidebar-label">MENU PRINCIPAL</div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html"><span>▦</span> Dashboard</a>
+            <a href="reservas.html"><span>▤</span> Reservas</a>
+            <a href="checkin.html"><span>↪</span> Check-in</a>
+            <a href="checkout.html"><span>↗</span> Check-out</a>
+            <a href="consumo.html"><span>☕</span> Consumo</a>
+            <a href="cancelamentos.html" class="active"><span>×</span> Cancelamentos</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="profile">
+                <div class="profile-avatar">AD</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <span>Recepção</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <span class="breadcrumb">BellaVista / Operações</span>
+                <h1>Cancelamentos</h1>
+            </div>
+            <div class="topbar-info">
+                <span class="topbar-date">20 de novembro de 2026</span>
+                <div class="user-avatar">AD</div>
+            </div>
+        </header>
+
+        <section class="welcome-banner">
+            <div>
+                <span class="banner-tag">GERENCIAMENTO DE RESERVAS</span>
+                <h2>Cancelamentos com praticidade e organização.</h2>
+                <p>Consulte uma reserva, registre o motivo e confirme o cancelamento.</p>
+            </div>
+            <div class="banner-decoration">BV</div>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <div class="stat-icon blue">▤</div>
+                <div>
+                    <span>Cancelamentos no mês</span>
+                    <h3>08</h3>
+                    <small>Registros realizados</small>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon orange">◷</div>
+                <div>
+                    <span>Solicitações pendentes</span>
+                    <h3>02</h3>
+                    <small>Aguardando análise</small>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div>
+                    <span>Canceladas</span>
+                    <h3>06</h3>
+                    <small>Concluídas</small>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon purple">▣</div>
+                <div>
+                    <span>Reservas preservadas</span>
+                    <h3>24</h3>
+                    <small>Ativas no sistema</small>
+                </div>
+            </article>
+        </section>
+
+        <section class="content-card">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">ETAPA 01</span>
+                    <h2>Localizar reserva</h2>
+                    <p>Selecione a reserva que o hóspede deseja cancelar.</p>
+                </div>
+                <span class="status status-warning">Nova solicitação</span>
+            </div>
+
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="reserva">Código da reserva</label>
+                        <select id="reserva" name="reserva">
+                            <option value="">Selecione uma reserva</option>
+                            <option>#001 - Mariana Oliveira</option>
+                            <option>#002 - Lucas Ferreira</option>
+                            <option>#003 - Ana Martins</option>
+                            <option>#004 - Pedro Santos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hospede">Nome do hóspede</label>
+                        <input type="text" id="hospede" name="hospede" placeholder="Nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quarto">Número do quarto</label>
+                        <select id="quarto" name="quarto">
+                            <option value="">Selecione o quarto</option>
+                            <option>104</option>
+                            <option>110</option>
+                            <option>113</option>
+                            <option>118</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data-reserva">Data da reserva</label>
+                        <input type="date" id="data-reserva" name="data-reserva">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="cancel-layout">
+
+            <div class="content-card">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">ETAPA 02</span>
+                        <h2>Dados do cancelamento</h2>
+                        <p>Informe o motivo e os detalhes da solicitação.</p>
+                    </div>
                 </div>
 
-                <div class="field">
-                    <label>Nome do hóspede</label>
-                    <input type="text" placeholder="Nome do hóspede">
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="data-cancelamento">Data da solicitação</label>
+                            <input type="date" id="data-cancelamento" name="data-cancelamento">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="responsavel">Atendente responsável</label>
+                            <input type="text" id="responsavel" name="responsavel" placeholder="Nome do atendente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">Motivo do cancelamento</label>
+                            <select id="motivo" name="motivo">
+                                <option value="">Selecione o motivo</option>
+                                <option>Desistência do hóspede</option>
+                                <option>Alteração de planos</option>
+                                <option>Problemas pessoais</option>
+                                <option>Erro na reserva</option>
+                                <option>Outro motivo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reembolso">Situação do pagamento</label>
+                            <select id="reembolso" name="reembolso">
+                                <option value="">Selecione uma opção</option>
+                                <option>Não houve pagamento</option>
+                                <option>Pagamento realizado</option>
+                                <option>Reembolso a verificar</option>
+                                <option>Reembolso realizado</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="detalhes">Observações adicionais</label>
+                            <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva o motivo ou alguma informação importante sobre o cancelamento..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">Limpar formulário</button>
+                        <button type="button" class="btn btn-danger">Solicitar cancelamento</button>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="content-card cancel-policy">
+                <span class="section-kicker">POLÍTICA DE CANCELAMENTO</span>
+                <h2>Antes de confirmar</h2>
+                <p>Confira as condições para realizar o cancelamento de uma reserva.</p>
+
+                <div class="policy-item">
+                    <div class="policy-number">01</div>
+                    <div>
+                        <strong>Verificar a reserva</strong>
+                        <small>Confirme os dados e a situação da hospedagem.</small>
+                    </div>
                 </div>
 
-                <div class="field">
-                    <label>Data da reserva</label>
-                    <input type="date">
+                <div class="policy-item">
+                    <div class="policy-number">02</div>
+                    <div>
+                        <strong>Prazo de cancelamento</strong>
+                        <small>O cancelamento deve respeitar as condições estabelecidas para a reserva.</small>
+                    </div>
                 </div>
+
+                <div class="policy-item">
+                    <div class="policy-number">03</div>
+                    <div>
+                        <strong>Conferir pagamento</strong>
+                        <small>Verifique se existe algum valor pago ou reembolso pendente.</small>
+                    </div>
+                </div>
+
+                <div class="policy-item">
+                    <div class="policy-number">04</div>
+                    <div>
+                        <strong>Finalizar solicitação</strong>
+                        <small>Registre o motivo e atualize a situação da reserva.</small>
+                    </div>
+                </div>
+
+                <div class="policy-alert">
+                    <strong>Importante</strong>
+                    <p>O cancelamento deve ser confirmado somente após a conferência das informações da reserva e das condições aplicáveis.</p>
+                </div>
+            </aside>
+
+        </section>
+
+        <section class="content-card">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">ETAPA 03</span>
+                    <h2>Confirmação do cancelamento</h2>
+                    <p>Resumo das informações antes da conclusão.</p>
+                </div>
+            </div>
+
+            <div class="cancel-confirmation">
+                <div class="cancel-confirm-icon">!</div>
+                <div class="cancel-confirm-text">
+                    <h3>Confirme os dados antes de cancelar</h3>
+                    <p>Após a confirmação, a reserva deverá ser identificada como cancelada e o quarto poderá retornar à disponibilidade, conforme a situação da hospedagem.</p>
+                </div>
+                <span class="status status-warning">Aguardando confirmação</span>
             </div>
 
             <div class="form-actions">
-                <button type="reset" class="btn-secondary">Limpar</button>
-                <button type="button" class="btn-primary">Consultar reserva</button>
+                <button type="button" class="btn btn-secondary">Voltar e revisar</button>
+                <button type="button" class="btn btn-danger">Confirmar cancelamento</button>
             </div>
-        </form>
-    </section>
+        </section>
 
-    <section class="panel recent-panel">
-        <div class="panel-header">
-            <div>
-                <h3>Reservas disponíveis para cancelamento</h3>
-                <p>Reservas confirmadas ainda não iniciadas.</p>
+        <section class="content-card">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">HISTÓRICO</span>
+                    <h2>Últimos cancelamentos</h2>
+                    <p>Consulte as solicitações registradas no sistema.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>CÓDIGO</th>
-                        <th>HÓSPEDE</th>
-                        <th>CHECK-IN</th>
-                        <th>CHECK-OUT</th>
-                        <th>STATUS</th>
-                        <th>AÇÃO</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td><strong>Mariana Oliveira</strong></td>
-                        <td>13/11/2026</td>
-                        <td>16/11/2026</td>
-                        <td><span class="badge reserved">Confirmada</span></td>
-                        <td><button type="button" class="btn-danger">Cancelar</button></td>
-                    </tr>
-                    <tr>
-                        <td>002</td>
-                        <td><strong>Lucas Ferreira</strong></td>
-                        <td>14/11/2026</td>
-                        <td>17/11/2026</td>
-                        <td><span class="badge reserved">Confirmada</span></td>
-                        <td><button type="button" class="btn-danger">Cancelar</button></td>
-                    </tr>
-                    <tr>
-                        <td>003</td>
-                        <td><strong>Ana Martins</strong></td>
-                        <td>15/11/2026</td>
-                        <td>18/11/2026</td>
-                        <td><span class="badge pending">Pendente</span></td>
-                        <td><button type="button" class="btn-danger">Cancelar</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section class="panel">
-        <div class="panel-header">
-            <div>
-                <h3>Procedimento de cancelamento</h3>
-                <p>Cuidados para evitar cancelamentos indevidos.</p>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Reserva</th>
+                            <th>Hóspede</th>
+                            <th>Quarto</th>
+                            <th>Data</th>
+                            <th>Motivo</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#008</td>
+                            <td>Fernanda Lima</td>
+                            <td>104</td>
+                            <td>18/11/2026</td>
+                            <td>Desistência</td>
+                            <td><span class="status status-success">Cancelada</span></td>
+                        </tr>
+                        <tr>
+                            <td>#007</td>
+                            <td>Bruno Almeida</td>
+                            <td>110</td>
+                            <td>17/11/2026</td>
+                            <td>Alteração de planos</td>
+                            <td><span class="status status-success">Cancelada</span></td>
+                        </tr>
+                        <tr>
+                            <td>#006</td>
+                            <td>Camila Souza</td>
+                            <td>113</td>
+                            <td>20/11/2026</td>
+                            <td>Problemas pessoais</td>
+                            <td><span class="status status-warning">Em análise</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
+        </section>
 
-        <div class="info-list">
-            <div>✓ <span>Confirmar a identificação da reserva.</span></div>
-            <div>✓ <span>Verificar o status da hospedagem.</span></div>
-            <div>✓ <span>Solicitar confirmação antes do cancelamento.</span></div>
-            <div>✓ <span>Informar claramente o resultado da operação.</span></div>
-        </div>
-    </section>
+        <footer class="footer">
+            <span>© 2026 BellaVista Hotel. Todos os direitos reservados.</span>
+            <span>Sistema de Gestão Hoteleira</span>
+        </footer>
 
-    <footer>
-        <span>BellaVista Hotel © 2026</span>
-        <span>Sistema de Gerenciamento Hoteleiro</span>
-    </footer>
+    </main>
+</div>
 
-</main>
 </body>
 </html>

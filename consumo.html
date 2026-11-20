@@ -9,179 +9,363 @@
 </head>
 <body>
 
-<aside class="sidebar">
-    <div class="brand">
-        <div class="logo">BV</div>
-        <div><h2>BellaVista</h2><span>HOTEL</span></div>
-    </div>
-    <div class="menu-title">MENU PRINCIPAL</div>
-    <nav>
-        <a href="index.html">▦ Dashboard</a>
-        <a href="reservas.html">▤ Reservas</a>
-        <a href="checkin.html">↪ Check-in</a>
-        <a href="checkout.html">↩ Check-out</a>
-        <a href="consumo.html" class="active">♧ Consumo</a>
-        <a href="cancelamentos.html">✕ Cancelamentos</a>
-    </nav>
-    <div class="sidebar-bottom">
-        <div class="employee">
-            <div class="avatar">RF</div>
-            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
-        </div>
-    </div>
-</aside>
+<div class="dashboard">
 
-<main class="main">
-
-    <header class="topbar">
-        <div>
-            <span class="breadcrumb">BellaVista / Consumo</span>
-            <h1>Registro de Consumo</h1>
-            <p>Registre bebidas consumidas e vincule à conta do quarto.</p>
-        </div>
-    </header>
-
-    <section class="stats">
-        <div class="stat-card">
-            <span>Consumos registrados</span>
-            <h2>18</h2>
-            <small>Lançamentos</small>
-        </div>
-        <div class="stat-card">
-            <span>Quartos com consumo</span>
-            <h2>05</h2>
-            <small>Hospedagens ativas</small>
-        </div>
-        <div class="stat-card">
-            <span>Total de consumo</span>
-            <h2>R$ 425</h2>
-            <small>Valores registrados</small>
-        </div>
-        <div class="stat-card">
-            <span>Último lançamento</span>
-            <h2>11:30</h2>
-            <small>Hoje</small>
-        </div>
-    </section>
-
-    <section class="panel form-panel">
-        <div class="panel-header">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="logo">BV</div>
             <div>
-                <h3>Novo lançamento</h3>
-                <p>Informe o quarto e os itens consumidos.</p>
+                <h2>BellaVista</h2>
+                <span>HOTEL & RESORT</span>
             </div>
-            <span class="total-rooms">CONSUMO</span>
         </div>
 
-        <form>
-            <div class="form-grid">
-                <div class="field">
-                    <label>Número do quarto</label>
-                    <select required>
-                        <option value="">Selecione o quarto</option>
-                        <option>102</option>
-                        <option>105</option>
-                        <option>108</option>
-                        <option>111</option>
-                        <option>115</option>
-                        <option>118</option>
-                    </select>
-                </div>
+        <div class="menu-label">MENU PRINCIPAL</div>
 
-                <div class="field">
-                    <label>Hóspede</label>
-                    <select>
-                        <option>Selecione o hóspede</option>
-                        <option>Lucas Ferreira</option>
-                        <option>Mariana Oliveira</option>
-                    </select>
-                </div>
+        <nav class="menu">
+            <a href="index.html"><span>▦</span> Dashboard</a>
+            <a href="reservas.html"><span>▣</span> Reservas</a>
+            <a href="checkin.html"><span>↘</span> Check-in</a>
+            <a href="checkout.html"><span>↗</span> Check-out</a>
+            <a href="consumo.html" class="active"><span>▤</span> Consumo</a>
+            <a href="cancelamentos.html"><span>⊗</span> Cancelamentos</a>
+        </nav>
 
-                <div class="field">
-                    <label>Produto</label>
-                    <select>
-                        <option value="">Selecione a bebida</option>
-                        <option>Água mineral - R$ 5,00</option>
-                        <option>Refrigerante - R$ 8,00</option>
-                        <option>Suco - R$ 10,00</option>
-                        <option>Cerveja - R$ 15,00</option>
-            </select>
-                </div>
-
-                <div class="field">
-                    <label>Quantidade</label>
-                    <input type="number" min="1" value="1">
-                </div>
-
-                <div class="field">
-                    <label>Data do consumo</label>
-                    <input type="date">
-                </div>
-
-                <div class="field">
-                    <label>Observações</label>
-                    <input type="text" placeholder="Informações adicionais">
+        <div class="sidebar-bottom">
+            <div class="user-profile">
+                <div class="user-avatar">AD</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <small>Recepção</small>
                 </div>
             </div>
+        </div>
+    </aside>
 
-            <div class="form-actions">
-                <button type="reset" class="btn-secondary">Limpar</button>
-                <button type="button" class="btn-primary">Registrar consumo</button>
-            </div>
-        </form>
-    </section>
+    <main class="main-content">
 
-    <section class="panel recent-panel">
-        <div class="panel-header">
+        <header class="topbar">
             <div>
-                <h3>Consumos recentes</h3>
-                <p>Histórico ilustrativo de lançamentos.</p>
+                <span class="breadcrumb">BellaVista / Consumo</span>
+                <h1>Registro de Consumo</h1>
+                <p>Gerencie os produtos e serviços utilizados pelos hóspedes.</p>
             </div>
-        </div>
 
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>QUARTO</th>
-                        <th>HÓSPEDE</th>
-                        <th>PRODUTO</th>
-                        <th>QUANTIDADE</th>
-                        <th>VALOR</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>102</td>
-                        <td><strong>Lucas Ferreira</strong></td>
-                        <td>Água mineral</td>
-                        <td>2</td>
-                        <td>R$ 10,00</td>
-                    </tr>
-                    <tr>
-                        <td>105</td>
-                        <td><strong>Mariana Oliveira</strong></td>
-                        <td>Refrigerante</td>
-                        <td>1</td>
-                        <td>R$ 8,00</td>
-                    </tr>
-                    <tr>
-                        <td>111</td>
-                        <td><strong>Pedro Santos</strong></td>
-                        <td>Suco</td>
-                        <td>2</td>
-                        <td>R$ 20,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+            <div class="topbar-right">
+                <span class="system-status">
+                    <span class="status-dot"></span>
+                    Sistema operacional
+                </span>
+                <div class="date-display">13 NOV 2026</div>
+            </div>
+        </header>
 
-    <footer>
-        <span>BellaVista Hotel © 2026</span>
-        <span>Sistema de Gerenciamento Hoteleiro</span>
-    </footer>
+        <section class="welcome-banner">
+            <div>
+                <span class="banner-label">CONTROLE DE CONSUMO</span>
+                <h2>Conforto em cada detalhe.</h2>
+                <p>Registre os lançamentos e acompanhe os gastos durante a hospedagem.</p>
+            </div>
+            <div class="banner-decoration">BV</div>
+        </section>
 
-</main>
+        <!-- RESUMO -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Resumo do consumo</h2>
+                    <p>Indicadores dos lançamentos registrados.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+
+                <article class="stat-card">
+                    <div class="stat-icon occupied-icon">▤</div>
+                    <div>
+                        <span>Lançamentos</span>
+                        <h3>18</h3>
+                        <small>Registros realizados</small>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon available-icon">⌂</div>
+                    <div>
+                        <span>Quartos atendidos</span>
+                        <h3>05</h3>
+                        <small>Com consumo registrado</small>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon reserved-icon">R$</div>
+                    <div>
+                        <span>Total registrado</span>
+                        <h3>425,00</h3>
+                        <small>Valores lançados</small>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon maintenance-icon">◷</div>
+                    <div>
+                        <span>Último lançamento</span>
+                        <h3>11:30</h3>
+                        <small>Horário do registro</small>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- NOVO LANÇAMENTO -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Novo lançamento</h2>
+                    <p>Informe o hóspede, o quarto e o produto consumido.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+
+                <h2>Dados do consumo</h2>
+                <p>Preencha as informações para registrar um novo lançamento.</p>
+
+                <form action="#" method="get">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="quarto">Número do quarto</label>
+                            <select id="quarto" name="quarto" required>
+                                <option value="">Selecione o quarto</option>
+                                <option value="102">102</option>
+                                <option value="105">105</option>
+                                <option value="108">108</option>
+                                <option value="111">111</option>
+                                <option value="115">115</option>
+                                <option value="118">118</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hospede">Hóspede</label>
+                            <select id="hospede" name="hospede" required>
+                                <option value="">Selecione o hóspede</option>
+                                <option value="lucas">Lucas Ferreira</option>
+                                <option value="mariana">Mariana Oliveira</option>
+                                <option value="pedro">Pedro Santos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="produto">Produto ou serviço</label>
+                            <select id="produto" name="produto" required>
+                                <option value="">Selecione um produto</option>
+                                <option value="agua">Água mineral - R$ 5,00</option>
+                                <option value="refrigerante">Refrigerante - R$ 8,00</option>
+                                <option value="suco">Suco natural - R$ 10,00</option>
+                                <option value="cerveja">Cerveja - R$ 15,00</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade</label>
+                            <input type="number" id="quantidade"
+                                name="quantidade" min="1" value="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data">Data do lançamento</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horario">Horário</label>
+                            <input type="time" id="horario" name="horario">
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="observacoes">Observações</label>
+                            <textarea id="observacoes" name="observacoes"
+                                placeholder="Informações adicionais sobre o consumo"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-secondary">
+                            Limpar formulário
+                        </button>
+
+                        <button type="button" class="btn btn-primary">
+                            Registrar consumo
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- HISTÓRICO -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Histórico de consumo</h2>
+                    <p>Consulte os lançamentos realizados durante as hospedagens.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="buscar">Buscar hóspede ou quarto</label>
+                        <input type="search" id="buscar"
+                            placeholder="Digite o nome ou número do quarto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="periodo">Período</label>
+                        <select id="periodo" name="periodo">
+                            <option value="">Todos os períodos</option>
+                            <option value="hoje">Hoje</option>
+                            <option value="semana">Últimos 7 dias</option>
+                            <option value="mes">Este mês</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="table-card">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quarto</th>
+                            <th>Hóspede</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor unitário</th>
+                            <th>Total</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td><strong>102</strong></td>
+                            <td>Lucas Ferreira</td>
+                            <td>Água mineral</td>
+                            <td>02</td>
+                            <td>R$ 5,00</td>
+                            <td><strong>R$ 10,00</strong></td>
+                            <td>13/11/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>105</strong></td>
+                            <td>Mariana Oliveira</td>
+                            <td>Refrigerante</td>
+                            <td>01</td>
+                            <td>R$ 8,00</td>
+                            <td><strong>R$ 8,00</strong></td>
+                            <td>13/11/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>111</strong></td>
+                            <td>Pedro Santos</td>
+                            <td>Suco natural</td>
+                            <td>02</td>
+                            <td>R$ 10,00</td>
+                            <td><strong>R$ 20,00</strong></td>
+                            <td>13/11/2026</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- INFORMAÇÕES -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Informações importantes</h2>
+                    <p>Orientações para o controle dos lançamentos.</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+
+                <div class="quick-grid">
+
+                    <div class="quick-card">
+                        <span class="quick-icon">01</span>
+                        <div>
+                            <strong>Identificar hóspede</strong>
+                            <small>Conferir quarto e reserva.</small>
+                        </div>
+                    </div>
+
+                    <div class="quick-card">
+                        <span class="quick-icon">02</span>
+                        <div>
+                            <strong>Registrar produto</strong>
+                            <small>Informar item e quantidade.</small>
+                        </div>
+                    </div>
+
+                    <div class="quick-card">
+                        <span class="quick-icon">03</span>
+                        <div>
+                            <strong>Conferir valores</strong>
+                            <small>Verificar os valores do lançamento.</small>
+                        </div>
+                    </div>
+
+                    <div class="quick-card">
+                        <span class="quick-icon">04</span>
+                        <div>
+                            <strong>Finalizar atendimento</strong>
+                            <small>Registrar o consumo na conta.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <span>© 2026 BellaVista Hotel</span>
+            <span>Sistema de gerenciamento hoteleiro</span>
+        </footer>
+
+    </main>
+
+</div>
+
 </body>
 </html>
