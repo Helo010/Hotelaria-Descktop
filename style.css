@@ -1210,3 +1210,271 @@ button {
         padding: 13px 12px;
     }
 }
+
+
+/* =========================================
+   BELLAVISTA - IDENTIDADE VISUAL APRIMORADA
+========================================= */
+
+:root {
+    --navy: #102747;
+    --navy-light: #1c3d65;
+    --blue: #3268c5;
+    --blue-light: #e4edff;
+    --gold: #d9a441;
+    --gold-light: #fff2d7;
+    --green: #21865a;
+    --green-light: #e0f5e9;
+    --purple: #7257bd;
+    --purple-light: #eee9ff;
+    --orange: #d98232;
+    --orange-light: #fff0df;
+    --red: #c94e58;
+    --red-light: #ffe6e8;
+    --background: #f0f3f9;
+}
+
+/* Fundo geral */
+body {
+    background: #f0f3f9;
+}
+
+/* Menu lateral */
+.sidebar {
+    background: linear-gradient(180deg, #102747 0%, #193b65 100%);
+}
+
+.sidebar-nav a.active {
+    background: linear-gradient(135deg, #3268c5, #4c83dc);
+}
+
+/* Cabeçalho */
+.topbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e4e9f2;
+}
+
+/* Banner principal */
+.welcome-banner {
+    background: linear-gradient(115deg, #193b65 0%, #285da5 65%, #3979c7 100%);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 10px 25px rgba(24, 57, 99, 0.14);
+}
+
+.welcome-banner h2 {
+    color: #ffffff;
+}
+
+.welcome-banner p {
+    color: #e3edff;
+}
+
+.banner-tag {
+    color: #f5cb79;
+}
+
+/* Cards de indicadores */
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f2;
+    border-radius: 16px;
+    box-shadow: 0 5px 16px rgba(30, 54, 86, 0.06);
+    transition: 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 22px rgba(30, 54, 86, 0.11);
+}
+
+.stat-icon.blue {
+    background: #e4edff;
+    color: #3268c5;
+}
+
+.stat-icon.green {
+    background: #e0f5e9;
+    color: #21865a;
+}
+
+.stat-icon.orange {
+    background: #fff0df;
+    color: #d98232;
+}
+
+.stat-icon.purple {
+    background: #eee9ff;
+    color: #7257bd;
+}
+
+/* Seções e formulários */
+.content-card {
+    background: #ffffff;
+    border: 1px solid #e1e7f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(30, 54, 86, 0.045);
+}
+
+.section-kicker {
+    color: #3268c5;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Campos */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: #f8faff;
+    border: 1px solid #dce4f0;
+    border-radius: 9px;
+    transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3268c5;
+    box-shadow: 0 0 0 3px rgba(50, 104, 197, 0.13);
+    background: #ffffff;
+}
+
+/* Botões */
+.btn-primary {
+    background: linear-gradient(135deg, #285db5, #3978d2);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #1d4f9e;
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, #d9a441, #edbd63);
+    color: #26354b;
+    border: none;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #c94e58, #df6972);
+    color: #ffffff;
+    border: none;
+}
+
+/* Tabelas */
+.data-table thead {
+    background: #eaf0fa;
+}
+
+.data-table th {
+    color: #193b65;
+    font-weight: 700;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background: #f8faff;
+}
+
+.data-table tbody tr:hover {
+    background: #edf3ff;
+}
+
+/* Status */
+.status-success {
+    background: #e0f5e9;
+    color: #17633b;
+}
+
+.status-warning {
+    background: #fff0d2;
+    color: #80500b;
+}
+
+.status-danger {
+    background: #ffe6e8;
+    color: #982d37;
+}
+
+.status-info {
+    background: #e4edff;
+    color: #2855a0;
+}
+
+/* Mapa de quartos */
+.room.available {
+    background: #c9edda;
+    border: 1px solid #4da878;
+    color: #145c35;
+}
+
+.room.occupied {
+    background: #f3c6c9;
+    border: 1px solid #d16c75;
+    color: #85242c;
+}
+
+.room.reserved {
+    background: #ffe3a9;
+    border: 1px solid #d8a03d;
+    color: #79500d;
+}
+
+.room.maintenance {
+    background: #dcd3fa;
+    border: 1px solid #9883d5;
+    color: #4d3c8a;
+}
+
+/* Resumo financeiro */
+.bill-total {
+    background: #eaf1ff;
+    border: 1px solid #d4e2ff;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.bill-total strong {
+    color: #285db5;
+}
+
+/* Políticas e confirmações */
+.policy-alert {
+    background: #fff4df;
+    border-left: 4px solid #d9a441;
+    border-radius: 9px;
+    padding: 16px;
+}
+
+.cancel-confirmation {
+    background: #fff6f5;
+    border: 1px solid #f2d6d6;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.confirmation-item {
+    background: #f7f9fd;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* Ações rápidas */
+.quick-card {
+    background: linear-gradient(145deg, #ffffff, #f0f5ff);
+    border: 1px solid #dce6f7;
+    border-radius: 14px;
+    transition: 0.2s ease;
+}
+
+.quick-card:hover {
+    background: #e7efff;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+.footer {
+    border-top: 1px solid #dce4ef;
+    color: #748198;
+}
